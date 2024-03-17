@@ -17,6 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   detailClose.addEventListener("click", () => {
+    if (isModifying) {
+      detailUserId.value = oldId;
+      detailUserId.setAttribute("readonly", true);
+    }
     isModifying = false;
     detailModify.style.color = "#797979";
     detailProfile.style.display = "none";

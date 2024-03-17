@@ -14,6 +14,7 @@ class UserProfile extends Observer {
 
   setUserInfo(user) {
     this.userInfo = user;
+    this.render();
   }
 
   render() {

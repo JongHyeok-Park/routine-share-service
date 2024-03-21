@@ -20,6 +20,18 @@ body {
   flex: none;
 }
 
+#group-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+#group-description {
+  margin-bottom: 44px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .group-member-container {
   width: 976px;
   padding: 0 90px;

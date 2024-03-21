@@ -1,0 +1,83 @@
+.calendar {
+  padding: 27px 10px;
+  background-color: var(--color-grey3);
+  border-radius: var(--border-radius-inner-box);
+}
+
+#calendar-table {
+  width: 100%;
+  font-weight: 400;
+}
+
+#year-month {
+  padding: 0 8px;
+  margin-right: auto;
+  vertical-align: middle;
+  line-height: 30px;
+}
+
+#calendar-table tr {
+  width: 100%;
+  margin: 2px 0;
+  height: 40px;
+}
+
+#calendar-table th {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#calendar-table td {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  width: 14.285%;
+  position: relative;
+}
+
+#calendar-table td.active span {
+  color: black;
+  z-index: 30;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+#calendar-table td.active::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--background-color-grape-magenta);
+  border-radius: var(--border-radius-round);
+  z-index: 20;
+}
+
+#calendar-table .other {
+  color: var(--color-grey4);
+}
+
+#join-btn {
+  padding: 14px 22px;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 40px;
+  background-color: var(--background-color-grape-magenta);
+  border: none;
+  margin-bottom: 24px;
+}
+
+.calendar-header {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.calendar-btn {
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  padding: 0;
+}

@@ -12,17 +12,36 @@
       <div id="profile">
         <img
           id="user-img"
-          class="group-member-image"
           src="https://avatars.githubusercontent.com/u/114932050?v=4"
           alt=""
         />
-        <span id="user-id">dbwlsleeeee</span>
+        <div id="user-id">dbwlsleeeee</div>
+        <img src="/public/assets/image/expand-icon.png" id="expand-icon" />
+      </div>
+      <div id="detail-profile">
+        <div id="detail-profile-wrapper">
+          <span id="detail-close">X</span>
+          <div id="detail-user-img-wrapper">
+            <img
+              id="detail-user-img"
+              src="https://avatars.githubusercontent.com/u/114932050?v=4"
+            />
+            <div id="detail-user-img-blur"></div>
+            <img id="pencil-icon" src="../public/assets/image/pencil-icon.png">
+          </div>
+          
+          <input type="text" id="detail-user-id" value="dbwlsleeeee" placeholder="dbwlsleeeee" readonly></span>
+          <button id="detail-modify">닉네임 수정하기</span>
+        </div>
       </div>
     </nav>
     <div class="search-content">
       <div class="search-info-wrapper">
-        <span id="search-keyword">'영어공부'</span>
-        <span id="search-sub">에 대해 검색한 결과예요.</span>
+        <img src="../public/assets/image/left-arrow.png" id="left-arrow" />
+        <div>
+          <span id="search-keyword">'영어공부'</span>
+          <span id="search-sub">에 대해 검색한 결과예요.</span>
+        </div>
         <span id="routine-number">(총304개)</span>
       </div>
       <div class="search-routine-container">
@@ -178,5 +197,6 @@
         </div>
       </div>
     </div>
+    <script src="/public/js/util/profile.js"></script>
   </body>
 </html>

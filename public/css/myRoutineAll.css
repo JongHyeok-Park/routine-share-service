@@ -1,0 +1,165 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+body {
+  font-family: 'Pretendard';
+
+  background: var(--color-black);
+  color: #fff;
+}
+
+.my-routine-content {
+  display: flex;
+
+  max-width: 1380px;
+
+  padding: 10px 0;
+  margin: auto;
+}
+
+.my-routine-text-wrapper {
+  max-width: 560px;
+  padding: 0 100px;
+
+  flex: none;
+}
+
+.my-routine-a {
+  margin-bottom: 32px;
+}
+
+.my-routine-text-wrapper > h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.04rem;
+  
+  margin: 0;
+}
+
+.my-routine-number {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.025rem;
+
+  color: #797979;
+
+  margin: 0;
+}
+
+.arrow {
+  width: 20px;
+  height: 25px;
+}
+
+.my-routine-container {
+  display: grid;
+  grid-template-columns: repeat(5, 148px);
+  gap: 14px;
+  max-width: 816px;
+  padding: 0 10px;
+}
+
+.my-routine {
+  aspect-ratio: 1/1;
+  width: 100%;
+  
+  border-radius: var(--border-radius-round);
+  background: conic-gradient(from 270deg, #D9ED92 0 57.6deg, #383B2F 0 180deg, var(--color-grey3) 0 360deg);
+}
+
+.my-routine-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 55%;
+}
+
+.my-routine-rate-container {
+  display: flex;
+  align-items: center;
+}
+
+.my-routine-rate-number {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.025rem;
+  color: #D9ED92;
+  margin: 0;
+  margin-right: 3px;
+}
+
+.my-routine-rate-persent {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.025rem;
+  color: #D9ED92;
+  margin: 0;
+}
+
+.my-routine-name {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: -0.025rem;
+  text-align: center;
+  width: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px){
+  .my-routine-content {
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .my-routine-text-wrapper {
+    margin: 0;
+    margin-bottom: 36px;
+  }
+
+  .my-routine-text-wrapper > h3 {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.03rem;
+  }
+  
+  .my-routine-number {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.025rem;
+  }
+
+  .my-routine-container {
+    grid-template-columns: repeat(3, 102px);
+    gap: 3px;
+
+    padding: 0;
+  }
+
+  .my-routine-rate-number {
+    font-size: 10px;
+    line-height: 16px;
+    margin: 0;
+  }
+  
+  .my-routine-rate-persent {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  
+  .my-routine-name {
+    font-size: 12px;
+    line-height: 16px;
+    width: 70px;
+  }
+}
